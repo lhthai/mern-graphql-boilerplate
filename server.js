@@ -5,6 +5,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const graphqlHTTP = require("express-graphql");
+const schema = require("./graphql/index");
 require("dotenv").config();
 
 mongoose
@@ -20,8 +21,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(
+  "/graphql",
   graphqlHTTP({
-    schema: null,
+    schema: schema,
     rootValue: global,
     graphiql: true
   })

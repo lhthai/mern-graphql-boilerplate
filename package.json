@@ -4,11 +4,11 @@
   "description": "Boilerplate for MERN stack and Graphql by Simon Le",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lhthai/mern-graphql-boilerplate.git"
+    "url": ""
   },
   "keywords": [
     "MERN",
@@ -17,9 +17,9 @@
   "author": "Simon Le",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lhthai/mern-graphql-boilerplate/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/lhthai/mern-graphql-boilerplate#readme",
+  "homepage": "",
   "dependencies": {
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
